@@ -1,26 +1,6 @@
 package entities;
 
-import enums.Color;
-
-public abstract class Shape {
-	
-	private Color color;
-	
-	
-	public Shape() {
-	}
-	
-	public Shape(Color color) {
-		this.color = color;
-	}
-	
-	 public Color getColor() {
-		 return color;
-	 }
+public interface Shape {
 	 
-	 public void setColor(Color color) {
-		 this.color = color;
-	 }
-	 
-	 public abstract Double area();
+	 abstract Double area();
 }

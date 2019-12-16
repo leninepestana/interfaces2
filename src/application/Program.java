@@ -2,9 +2,9 @@ package application;
 
 import java.util.Scanner;
 
+import entities.AbstractShape;
 import entities.Circle;
 import entities.Rectangle;
-import entities.Shape;
 import enums.Color;
 
 public class Program {
@@ -13,8 +13,8 @@ public class Program {
 
 		Scanner sc = new Scanner(System.in);
 		
-		Shape s1 = new Circle(Color.BLACK, 2.0);
-		Shape s2 = new Rectangle(Color.WHITE, 3.0, 4.0);
+		AbstractShape s1 = new Circle(Color.BLACK, 2.0);
+		AbstractShape s2 = new Rectangle(Color.WHITE, 3.0, 4.0);
 		
 		System.out.println("Circle color: " + s1.getColor());
 		System.out.println("Circle area: " + String.format("%.2f", s1.area()));
